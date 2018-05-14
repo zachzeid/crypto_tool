@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 import argparse
-from base64 import b64encode
-from datetime import datetime
 
 import boto3
 
@@ -54,8 +52,6 @@ def store_ssh_keys(keyid, keybinary, parameter_name, aws_profile):
             KeyId="alias/%s" % keyid,
             Name="/{}".format(parameter_name),
             Value=encoded_blob,
-
-            # Value=encoded_blob.decode('ascii'),
             Overwrite=True
         )
         if response['ResponseMetadata']['HTTPStatusCode'] == 200:
