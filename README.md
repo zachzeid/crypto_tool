@@ -6,11 +6,11 @@ with a given AWS KMS alias (-k).  You can also get parameters (-g) and this
 program assumes that anything you are putting into SSM is encrypted, and will
 try to decrypt it.
 
-usage: parameterstore.py [-h] [-k [KEY_ID [KEY_ID ...]]]
+```usage: parameterstore.py [-h] [-k [KEY_ID [KEY_ID ...]]]
                          [-n [PARAMETER_NAME [PARAMETER_NAME ...]]]
                          [-p [PROFILE [PROFILE ...]]]
                          [-u [UPLOAD [UPLOAD ...]]]
-                         [-g [GET_PARAMETER [GET_PARAMETER ...]]]
+                         [-g [GET_PARAMETER [GET_PARAMETER ...]]]```
 
 Keystore is a tool to upload sensitive parameters to AWS SSM Parameter Store
 
