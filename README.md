@@ -1,8 +1,8 @@
 James says I should have a README.md
 
 Crypto_tool has nothing to do with crytpography.  All this tool will do is take
-a file (-f) and upload the content into AWS SSM Parameter Store and encrypt it
-with a given AWS KMS alias (-k).  You can also get parameters (-g) and this
+a file (`-f`) and upload the content into AWS SSM Parameter Store and encrypt it
+with a given AWS KMS alias (`-k`).  You can also get parameters (`-g`) and this
 program assumes that anything you are putting into SSM is encrypted, and will
 try to decrypt it.
 
